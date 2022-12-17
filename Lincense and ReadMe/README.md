@@ -1,49 +1,94 @@
-# Title 
+# Unit 4 Challenge: Console Finances
 
-Console-Finances
+## Overview
+ 
+In this challenge, you'll be using the concepts you've learned to complete the required activity. This activity presents a real-world situation in which your newfound JavaScript skills will come in handy. You are tasked with creating code for analyzing the financial records of a company. You have been provided with a financial dataset in the `starter/index.js` file.
 
-# Description
+## Instructions
 
-This project simulates a real-world situation in which JavaScript skills apply to a project. It showcases the JavaScript skills and concepts I learned. 
+1. Create a new GitHub repo called `Console-Finances`. Then, clone it to your computer.
 
-# Usage
+2. Copy the starter files in your local git repository.
+   
+You have been given a dataset composed of arrays with two fields, Date and Profit/Losses.
 
-This project analyses a company's financial records from 2010 to 2017.
+Your task is to write JavaScript code that analyzes the records to calculate each of the following:
 
-# Requirement
+* The total number of months included in the dataset.
 
-This project has five requirements.
+* The net total amount of Profit/Losses over the entire period.
 
-1/ The total number of months
-2/ The total net amount over the entire period
-3/ The average amount over the entire period
-4/ The maximum profits over the entire period
-5/ The minimum profits over the entire period
+* The average of the **changes** in Profit/Losses over the entire period.
+  * You will need to track what the total change in profits are from month to month and then find the average.
+  * (`Total/Number of months`)
 
-# Link
+* The greatest increase in profits (date and amount) over the entire period.
 
-Repository: https://github.com/ra724619/Console-Finances
-Page: https://ra724619.github.io/Console-Finances/
-Profile: https://github.com/ra724619
+* The greatest decrease in losses (date and amount) over the entire period.
 
-# Screenshot
+When you open your code in the browser your resulting analysis should look similar to the following:
 
-Result:
-![image](https://user-images.githubusercontent.com/117188356/208250853-3eb31f3b-88c3-49ab-b6e8-9464f59df41e.png)
+  ```text
+  Financial Analysis
+  ----------------------------
+  Total Months: 25
+  Total: $2561231
+  Average  Change: $-2315.12
+  Greatest Increase in Profits: Feb-2012 ($1926159)
+  Greatest Decrease in Profits: Sep-2013 ($-2196167)
+  ```
 
-Code:
-![image](https://user-images.githubusercontent.com/117188356/208250944-18d7f3a3-9295-437e-ab0e-901c3f64b8b3.png)
-![image](https://user-images.githubusercontent.com/117188356/208250964-de3b526d-d32f-4322-bca3-d28a79635cea.png)
-![image](https://user-images.githubusercontent.com/117188356/208250970-7ae5649a-f791-44cd-852f-47c1c01270b9.png)
+Your final code should print the analysis to the console.
 
-# Installation
+**Hints:**
 
-N/A
+* You will need to do some research on your own for this project!
 
-# License
+* Remember, in order to combine strings and variables in the console you will need to use **concatenation**.
 
-MIT License
+* How do you only print to the nearest 100th in JavaScript?
 
-# Credit
+## Grading Requirements
 
-Big shout out to my study groups and tutors. Without their help, I will struggle for a long time.
+This homework is graded based on the following criteria: 
+
+### Technical Acceptance Criteria: 40%
+
+* Satisfies all of the above acceptance criteria.
+
+### Deployment: 32%
+
+* Application deployed at live URL.
+
+* Application loads with no errors.
+
+* Application GitHub URL submitted.
+
+* GitHub repository contains application code.
+
+### Repository Quality: 12%
+
+* Repository has a unique name.
+
+* Repository follows best practices for file structure and naming conventions.
+
+* Repository follows best practices for variable naming conventions, indentation, quality comments, etc.
+
+* Repository contains multiple descriptive commit messages.
+
+* Repository contains quality readme with description, screenshot, link to deployed application.
+
+## Review
+
+You are required to submit BOTH of the following for review:
+
+* The URL of the deployed application.
+
+* The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
+
+---
+
+## Copyright
+
+© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
