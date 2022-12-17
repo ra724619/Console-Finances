@@ -86,3 +86,59 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+//Title
+
+console.log ("Financial Analysis");
+
+//The total number of months included in the dataset.
+var financeDate = []
+for (var i = 0; i < finances.length; i++) {
+    financeDate.push (finances[i][0]);
+}
+console.log("Total Months: " + financeDate.length);
+
+//The net total amount of Profit/Losses over the entire period.
+var financeNum = []
+for (var i=0; i < finances.length; i++) {
+    financeNum.push (finances[i][1]);
+}
+
+let financeSum = 0;
+
+for (var i = 0; i < financeNum.length; i++) {
+    financeSum += financeNum[i];
+}
+
+console.log ("Total: " + financeSum);
+
+//The average of the changes in Profit/Losses over the entire period.
+//You will need to track what the total change in profits are from month to month and then find the average.
+//(Total/Number of months)
+/*for round up to nearest integer see below comment
+let financeAvg = Math.round(financeNum.reduce((a,b) => a + b, 0) / financeNum.length);*/
+
+let financeAvg = financeNum.reduce((a,b) => a + b, 0) / financeNum.length;
+let financeAvgRound2 = financeAvg.toFixed(2);
+console.log ("Average Change: " + financeAvgRound2);
+
+//The greatest increase in profits (date and amount) over the entire period.
+//The greatest decrease in losses (date and amount) over the entire period.
+let financeMinAm;
+let financeMinName;
+let financeMaxAm;
+let financeMaxName;
+
+finances.forEach ( i => {
+    if(!financeMinAm || i[1] < financeMinAm) {
+        financeMinAm = i[1];
+        financeMinName = i[0];
+    }
+    if(!financeMaxAm || i[1] > financeMaxAm) {
+        financeMaxAm = i[1];
+        financeMaxName = i[0];
+    }
+})
+
+console.log("Greatest Increase in Profits: " + financeMaxName + " (" + financeMaxAm +")")
+console.log("Greatest Decrease in Profits: " + financeMinName + " (" + financeMinAm +")")
