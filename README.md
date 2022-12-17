@@ -20,6 +20,12 @@ This project has five requirements.
 4/ The maximum profits over the entire period
 5/ The minimum profits over the entire period
 
+# Link
+
+Repository: https://github.com/ra724619/Console-Finances
+Page: https://ra724619.github.io/Console-Finances/
+Profile: https://github.com/ra724619
+
 # Screenshot
 
 Result:
